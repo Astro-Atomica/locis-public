@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "updated": "2026-10-07",
+  "build": 2,
+  "repository": "https://github.com/Astro-Atomica/locis-public",
+  "pages": [
+    {
+      "source": "README.md",
+      "output": "index.html",
+      "label": "Overview"
+    },
+    {
+      "source": "docs/getting-started.md",
+      "output": "getting-started.html",
+      "label": "Getting started"
+    },
+    {
+      "source": "docs/using-locis.md",
+      "output": "using-locis.html",
+      "label": "Using loc.is"
+    },
+    {
+      "source": "docs/examples.md",
+      "output": "examples.html",
+      "label": "Examples"
+    },
+    {
+      "source": "docs/troubleshooting.md",
+      "output": "troubleshooting.html",
+      "label": "Troubleshooting"
+    },
+    {
+      "source": "docs/developers.md",
+      "output": "developers.html",
+      "label": "Developers"
+    },
+    {
+      "source": "docs/privacy-and-sharing.md",
+      "output": "privacy-and-sharing.html",
+      "label": "Safe sharing"
+    },
+    {
+      "source": "docs/reporting-issues.md",
+      "output": "reporting-issues.html",
+      "label": "Report a problem"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "output": "contributing.html",
+      "label": "Contribute"
+    },
+    {
+      "source": "SECURITY.md",
+      "output": "security.html",
+      "label": "Security"
+    },
+    {
+      "source": "docs/support-process.md",
+      "output": "support-process.html",
+      "label": "Maintainer support"
+    },
+    {
+      "source": "docs/repository-scope.md",
+      "output": "repository-scope.html",
+      "label": "Repository scope"
+    },
+    {
+      "source": "docs/static-docs.md",
+      "output": "static-docs.html",
+      "label": "Build these docs"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# Updated October 4, 2026 · Build 1
+name: Place or location-data problem
+description: Report an incorrect name, source extent, map representation or fitted area.
+title: "[Location] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Source geography, estimated named areas and encoded rectangles are different. Explain which representation appears wrong. Public-source links help, but are not required to report a concern. Reports and attachments are public; use a harmless location.
+        Form updated October 4, 2026 · Build 1.
+  - type: input
+    id: place
+    attributes:
+      label: Public place name and affected URL or code
+      description: Do not report precise personal location or private address details publicly.
+    validations:
+      required: true
+  - type: dropdown
+    id: representation
+    attributes:
+      label: Which representation appears wrong?
+      options:
+        - Place name or search result
+        - Source extent or geography
+        - Estimated or fitted named area
+        - Decoded location rectangle
+        - Background map data
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the website shows
+      description: Include how you reached the result and the discrepancy you noticed.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change or needs investigation?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Optional sources or observations
+      description: Link reliable public information where available. Distinguish your observation from an unverified claim. Do not attach private records.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public report check
+      options:
+        - label: I have removed sensitive personal, location, account and visitor information from this report and its attachments.
+          required: true

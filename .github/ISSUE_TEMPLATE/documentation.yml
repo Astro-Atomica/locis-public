@@ -1,0 +1,44 @@
+# Updated October 4, 2026 · Build 1
+name: Documentation correction
+description: Report an inaccurate, unclear or missing explanation, or a broken documentation link.
+title: "[Docs] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports and attachments are public. Describe the wording or link that needs attention and provide sources if available. Remove personal information and sensitive locations.
+        Form updated October 4, 2026 · Build 1.
+  - type: input
+    id: page
+    attributes:
+      label: Document URL or repository file
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Document date and build
+      description: Copy the version if shown, or leave blank if unknown.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect, unclear or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction or explanation needed
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Optional supporting sources or observations
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public report check
+      options:
+        - label: I have removed sensitive personal, location, account and visitor information from this report and its attachments.
+          required: true

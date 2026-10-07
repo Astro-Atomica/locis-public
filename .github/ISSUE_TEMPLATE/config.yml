@@ -1,0 +1,9 @@
+# Updated October 4, 2026 · Build 1
+blank_issues_enabled: false
+contact_links:
+  - name: How to use loc.is
+    url: https://loc.is/s/how-to.html
+    about: Read the public website guide before reporting unexpected behavior.
+  - name: Security or sensitive information
+    url: https://github.com/Astro-Atomica/locis-public/blob/main/SECURITY.md
+    about: Use the private contact route for vulnerabilities or sensitive details.

@@ -1,0 +1,76 @@
+# Updated October 4, 2026 · Build 1
+name: Website bug
+description: Report broken behavior, loading, layout, accessibility, links or QR controls.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Reports and attachments are public. Use a harmless example location and remove personal location, account and visitor data. For vulnerabilities, follow the repository's SECURITY.md instead.
+        Form updated October 4, 2026 · Build 1.
+  - type: input
+    id: page
+    attributes:
+      label: Affected page URL or harmless example location code
+      description: Do not include home/work coordinates or private addresses. Say if the page is unavailable.
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Affected feature
+      options:
+        - Search or place selection
+        - Location links or encoded rectangle
+        - Map display
+        - QR code or download
+        - Loading or traffic display
+        - Layout or accessibility
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Enter or select...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include visible error text and whether the problem repeats. Avoid unredacted logs or network exports.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, operating system and device
+      description: Include browser version if known. For layout or accessibility, note zoom, window size, keyboard or screen reader when relevant.
+  - type: input
+    id: version
+    attributes:
+      label: Document date/build or time observed
+      description: Copy a document version only if shown; otherwise leave blank or say unknown. Do not guess a website build.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional screenshot or additional observations
+      description: Review attachments for private tabs, account information and location links/codes. A QR code also reveals its encoded area.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public report check
+      options:
+        - label: I have removed sensitive personal, location, account and visitor information from this report and its attachments.
+          required: true
